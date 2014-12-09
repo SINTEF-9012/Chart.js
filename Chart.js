@@ -1177,6 +1177,7 @@
 			var ctx = this.ctx;
 
 			ctx.beginPath();
+			if (this.outerRadius < 0) return;
 
 			ctx.arc(this.x, this.y, this.outerRadius, this.startAngle, this.endAngle);
 
